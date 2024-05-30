@@ -1,0 +1,223 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/bitcraze/crazyflie/protos/Crazyflie.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Grass.proto"
+
+WorldInfo {
+  title "Crazyflie Ardupilot"
+  basicTimeStep 2
+  FPS 30
+}
+Viewpoint {
+  orientation -0.04486154439463261 0.0739988806090425 0.9962487678803608 1.093334680226202
+  position -2.867723379962072 -3.8764826974210345 1.0043370288527664
+  follow "Crazyflie 0"
+  followSmoothness 0.01
+}
+TexturedBackground {
+  texture "noon_cloudy_countryside"
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 2000 2000
+  tileSize 1 1
+  appearance Grass {
+    type "mossy"
+  }
+}
+Crazyflie {
+  translation -0.00024272439721781706 -0.001412831446567998 0.01499877375
+  rotation 4.972802450814158e-16 -3.1629750561846187e-15 -1 0.00012034252104505475
+  name "Crazyflie 0"
+  controller "ardupilot_vehicle_controller"
+  controllerArgs [
+    "--reversed-motors"
+    "1, 2"
+    "--camera"
+    "camera"
+    "--camera-fps"
+    "10"
+    "--motors"
+    "m1_motor, m3_motor, m4_motor, m2_motor"
+    "--motor-cap"
+    "100"
+    "--instance"
+    "0"
+  ]
+  extensionSlot [
+    Accelerometer {
+    }
+  ]
+}
+Crazyflie {
+  translation 2.98361480483416e-14 1.0000000000000822 0.014998773750000003
+  rotation 1.0382538220751604e-08 1.686187272957433e-08 -0.9999999999999998 1.006162430258631e-11
+  name "Crazyflie 1"
+  controller "ardupilot_vehicle_controller"
+  controllerArgs [
+    "--reversed-motors"
+    "1, 2"
+    "--camera-fps"
+    "10"
+    "--camera"
+    "camera"
+    "--motors"
+    "m1_motor, m3_motor, m4_motor, m2_motor"
+    "--motor-cap"
+    "100"
+    "--instance"
+    "1"
+  ]
+  extensionSlot [
+    Accelerometer {
+    }
+  ]
+}
+Crazyflie {
+  translation -0.0001315436065742905 1.9997315145104675 0.014998773750000007
+  rotation 3.170452563615015e-14 9.260663457944445e-15 1 9.510239711550006e-06
+  name "Crazyflie 2"
+  controller "ardupilot_vehicle_controller"
+  controllerArgs [
+    "--reversed-motors"
+    "1, 2"
+    "--camera"
+    "camera"
+    "--camera-fps"
+    "10"
+    "--motors"
+    "m1_motor, m3_motor, m4_motor, m2_motor"
+    "--motor-cap"
+    "100"
+    "--instance"
+    "2"
+  ]
+  extensionSlot [
+    Accelerometer {
+    }
+  ]
+}
+Crazyflie {
+  translation -1.0106042729053005e-05 2.9999084072146958 0.014998773750000003
+  rotation -0.007292271520868032 0.004613673396600117 -0.9999627677038057 2.010686825946758e-17
+  name "Crazyflie 3"
+  controller "ardupilot_vehicle_controller"
+  controllerArgs [
+    "--reversed-motors"
+    "1, 2"
+    "--camera-fps"
+    "10"
+    "--camera"
+    "camera"
+    "--motors"
+    "m1_motor, m3_motor, m4_motor, m2_motor"
+    "--motor-cap"
+    "100"
+    "--instance"
+    "3"
+  ]
+  extensionSlot [
+    Accelerometer {
+    }
+  ]
+}
+Crazyflie {
+  translation -7.046846678667668e-07 4.000001194972781 0.014998773750000003
+  rotation -6.0445058599111375e-18 -4.940526584899678e-18 1 0.05927109241084325
+  name "Crazyflie 4"
+  controller "ardupilot_vehicle_controller"
+  controllerArgs [
+    "--reversed-motors"
+    "1, 2"
+    "--camera-fps"
+    "10"
+    "--camera"
+    "camera"
+    "--motors"
+    "m1_motor, m3_motor, m4_motor, m2_motor"
+    "--motor-cap"
+    "100"
+    "--instance"
+    "4"
+  ]
+  extensionSlot [
+    Accelerometer {
+    }
+  ]
+}
+Crazyflie {
+  translation -0.0008865541129937955 4.998890149899128 0.014998773750000003
+  rotation -0.023993495432352605 0.0020856776184251 -0.9997099389952117 2.4670543055812957e-17
+  name "Crazyflie 5"
+  controller "ardupilot_vehicle_controller"
+  controllerArgs [
+    "--reversed-motors"
+    "1, 2"
+    "--camera-fps"
+    "10"
+    "--camera"
+    "camera"
+    "--motors"
+    "m1_motor, m3_motor, m4_motor, m2_motor"
+    "--motor-cap"
+    "100"
+    "--instance"
+    "5"
+  ]
+  extensionSlot [
+    Accelerometer {
+    }
+  ]
+}
+Crazyflie {
+  translation 1.6823417605579176e-14 5.99999999999773 0.014998773750000003
+  rotation 0.0060842458284647025 -0.008065239973020189 -0.9999489656261845 2.344307481936907e-17
+  name "Crazyflie 6"
+  controller "ardupilot_vehicle_controller"
+  controllerArgs [
+    "--reversed-motors"
+    "1, 2"
+    "--camera-fps"
+    "10"
+    "--camera"
+    "camera"
+    "--motors"
+    "m1_motor, m3_motor, m4_motor, m2_motor"
+    "--motor-cap"
+    "100"
+    "--instance"
+    "6"
+  ]
+  extensionSlot [
+    Accelerometer {
+    }
+  ]
+}
+Crazyflie {
+  translation -8.783597840145004e-14 6.99999999999733 0.014998773750000003
+  rotation -0.0035296821458615218 0.008405820786578795 -0.9999584408968472 2.7159730541668823e-17
+  name "Crazyflie 7"
+  controller "ardupilot_vehicle_controller"
+  controllerArgs [
+    "--reversed-motors"
+    "1, 2"
+    "--camera-fps"
+    "10"
+    "--camera"
+    "camera"
+    "--motors"
+    "m1_motor, m3_motor, m4_motor, m2_motor"
+    "--motor-cap"
+    "100"
+    "--instance"
+    "7"
+  ]
+  extensionSlot [
+    Accelerometer {
+    }
+  ]
+}
